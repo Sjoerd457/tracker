@@ -1,11 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="my_project",
+    name="tracker",
     version="0.1.0",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
-    include_package_data=True,
+    packages=find_packages(include=['app', 'app.*']),
     install_requires=[
         # List your project's dependencies here.
         # Example: 'requests>=2.23.0',
